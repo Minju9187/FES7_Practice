@@ -1,0 +1,102 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgba(240, 244, 255, 1),
+    rgba(165, 182, 238, 1)
+  );
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-title {
+  width: 244px;
+  aspect-ratio: 244/48;
+  /* margin-top: 72px; */
+  margin-bottom: 60px;
+}
+
+.timer-box {
+  background: linear-gradient(144.07deg, #5572bb 2.13%, #374b7c 102.97%);
+  box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
+  border-radius: 16px;
+  width: 400px;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+.timer-title {
+  font-family: Pretendard-Bold;
+  color: white;
+  font-size: 24px;
+  padding-top: 48px;
+  padding-bottom: 23px;
+  margin: 0 44px 50px 44px;
+  border-bottom: 2px solid rgba(61, 83, 138, 1);
+  text-align: center;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.timebox {
+  position: relative;
+  width: 80px;
+
+  background-image: url(/FES7/과제/멋사시험/images/box.png);
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+
+  color: white;
+  font-family: Pretendard-Bold;
+  font-size: 40px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.hrs::before {
+  content: "HRS";
+  font-size: 12px;
+  position: absolute;
+  top: -50px;
+  left: 28px;
+  color: rgba(165, 182, 238, 1);
+}
+.min::before {
+  content: "MIN";
+  font-size: 12px;
+  position: absolute;
+  top: -50px;
+  left: 28px;
+  color: rgba(165, 182, 238, 1);
+}
+.sec::before {
+  content: "SEC";
+  font-size: 12px;
+  position: absolute;
+  top: -50px;
+  left: 28px;
+  color: rgba(165, 182, 238, 1);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.copyright {
+  font-family: Pretendard-Regular;
+  color: rgba(133, 150, 191, 1);
+  font-size: 14px;
+}
